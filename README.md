@@ -1,6 +1,6 @@
-# WPF Geolocation Example
+# C# Geolocation Example
 
-A minimal WPF app that grabs your GPS coordinates using the Windows Location API.
+A minimal Console app that grabs your GPS coordinates using the Windows Location API.
 
 ## What It Does
 
@@ -27,8 +27,8 @@ The code never touches hardware directly. Windows Location Services does the hea
 ### async / await
 The geolocation calls take time (talking to hardware). `async` marks the method as "contains waiting." `await` marks the exact line where you pause. While waiting, the UI stays responsive — no frozen window.
 
-### WinRT APIs in WPF
-`Windows.Devices.Geolocation` is a WinRT (Windows Runtime) API, not a standard .NET API. To access it from a WPF project, the `.csproj` needs a Windows-specific target framework.
+### WinRT APIs in Console
+`Windows.Devices.Geolocation` is a WinRT (Windows Runtime) API, not a standard .NET API. To access it from a Console project, the `.csproj` needs a Windows-specific target framework.
 
 ## Project Requirements
 
